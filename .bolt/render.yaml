@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: vsat-ai-backend
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"  # Update path if needed
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.16
